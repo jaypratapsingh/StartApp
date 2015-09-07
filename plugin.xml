@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jp.plugin.startapp"
+    version="1.0.2">
+    <name>StartApp</name>
+    <description>Start another app from app</description>
+    <license>Apache 2.0</license>
+    <keywords>app,start app</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/startapp.js" name="StartApp">
+        <clobbers target="startapp" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="StartApp" >
+                <param name="android-package" value="com.jp.plugin.startapp.StartApp"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/jp/plugin/startapp/StartApp.java" target-dir="src/com/jp/plugin/startapp" />
+    </platform>
+</plugin>

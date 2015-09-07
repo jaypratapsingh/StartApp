@@ -1,0 +1,19 @@
+{
+  "name": "start_app",
+  "version": "1.0.2",
+  "description": "Start another app from app",
+  "cordova": {
+    "id": "com.jp.plugin.startapp",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "app",
+    "start app",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Jay Pratap Singh",
+  "license": "Apache 2.0"
+}
